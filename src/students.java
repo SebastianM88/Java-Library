@@ -25,7 +25,7 @@ public class students {
             }
         }
 
-        if (count <= 50) {
+        if (count <= 30) {
             theStudents[count] = s;
             count++;
         }
