@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Class
+
 public class students {
 
     // Creating objects of Scanner and students class which will be an Array type with a limit of 30 people
@@ -33,8 +33,10 @@ public class students {
 
     // Method 2, for Displaying all students
     public void showAllStudents()  {
+
         // The code used for printing the student name and his register number
         System.out.println("Student Name \t\t Register Number");
+
         for (int i = 0; i < count; i++) {
 
             System.out.println(theStudents[i].studentName
@@ -43,7 +45,7 @@ public class students {
         }
     }
 
-    // Method 3, for checking if a student is registered of not
+    // Method 3, for checking if a student is registered or not
     public int isStudent()  {
 
         System.out.println("Enter Reg Number:");
@@ -53,6 +55,7 @@ public class students {
 
             if (theStudents[i].regNum.equalsIgnoreCase(
                     regNum)) {
+
                 return i;
             }
         }
@@ -65,7 +68,8 @@ public class students {
 
     // Method 4,This method is used to allow a student to borrow a book.
     public void checkOutBook(books book)  {
-        // // Check if the student is registered
+
+        // Check if the student is registered
         int studentIndex = this.isStudent();
 
         if (studentIndex != -1) {
@@ -73,8 +77,8 @@ public class students {
 
             book.showAllBooks();
 
-            /* Try to borrow a book, and if the book is available
-            the method will make the book borrowable as well
+            /* A code that aims to verify whether a book is available
+            and whether it is available to make the book borrowable
              */
             book b = book.checkOutBook();
 
@@ -139,8 +143,8 @@ public class students {
                 }
             }
 
-            System.out.println("Book of Serial No " + sNo
-                    + "not Found");
+            System.out.println("There is no book with this serial number " + sNo
+                    + "that is still in existence");
         }
     }
 }

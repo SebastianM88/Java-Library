@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args)  {
+
         // Creating object of Scanner class to take input from user
         Scanner input = new Scanner(System.in);
 
@@ -21,7 +22,7 @@ public class Main {
         int choice;
         int searchChoice;
 
-        // Creating manu functionalities
+        // Creating menu functionalities
         do {
 
             ob.dispMenu();
@@ -49,37 +50,38 @@ public class Main {
                     // This is Nested switch
                     switch (searchChoice) {
 
-                        // Case
                         case 1:
                             ob.searchBySno();
                             break;
 
-                        // Case
                         case 2:
                             ob.searchByAuthorName();
                     }
                     break;
 
                 case 4:
+
                     ob.showAllBooks();
                     break;
 
                 case 5:
+
                     student s = new student();
                     obStudent.addStudent(s);
                     break;
 
                 case 6:
+
                     obStudent.showAllStudents();
                     break;
 
-
                 case 7:
+
                     obStudent.checkOutBook(ob);
                     break;
 
-
                 case 8:
+
                     obStudent.checkInBook(ob);
                     break;
 
@@ -92,8 +94,9 @@ public class Main {
 
         }
 
-        // Checking condition at last where we are
-        // checking case entered value is not zero
+        /* Code used if the user gives an
+        inappropriate answer, an exception that will end
+        the program can be thrown away */
         while (choice != 0);
     }
 }

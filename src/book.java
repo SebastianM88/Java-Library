@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// Class
 public class book {
 
     // Class data members
@@ -14,6 +13,7 @@ public class book {
 
     // Method used for adding the book details
     public book()  {
+
         // adding the serial number
         System.out.println("Enter Serial Number of Book:");
         this.sNo = input.nextInt();

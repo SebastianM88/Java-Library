@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-// Class
 public class student {
 
     // Definition class variables
     String studentName;
     String regNum;
 
+    // defining the limit of books that can be borrowed
     book borrowedBooks[] = new book[3];
     public int booksCount = 0;
 
